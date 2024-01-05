@@ -16,15 +16,16 @@ export default function Header() {
             <input type="text" placeholder='Search...' className=' bg-transparent focus:outline-none w-24 sm:w-64 md:40' />
             <FaSearch className=' text-slate-600' />
         </form>
-        <ul className='flex gap-4'>
+        <ul className='flex gap-3 items-center justify-center'>
             <Link to='/'>
-            <li className='hidden sm:inline text-slate-200 hover:underline text-xl'>Home</li>
+            <li className='hidden sm:inline text-blue-600 font-bold hover:bg-blue-500   hover:text-white  bg-white p-2 rounded-lg h-auto' >Home</li>
             </Link>
+            
             <Link to='/about'>
-            <li className='hidden sm:inline text-slate-200 hover:underline text-xl'>About</li>
+            <li className='hidden sm:inline text-blue-600 hover:bg-blue-500 hover:text-white font-bold bg-white p-2 rounded-lg h-auto'>About</li>
             </Link>
             <Link to='/sign-in'>
-            <li className='text-slate-200 hover:underline text-xl'>Sign in</li>
+            <li className=' text-blue-600 hover:bg-blue-500 hover:text-white font-bold bg-white px-2 py-1.5 rounded-lg h-auto '>Sign in</li>
             </Link>
         </ul>
         </div>
